@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaHtml5, FaCss3Alt, FaJs, FaPython, FaJava, FaGitAlt, FaGithub, FaBootstrap } from "react-icons/fa";
-import { SiTailwindcss, SiVisualstudiocode, SiCanva, SiFigma } from "react-icons/si";
+import { SiTailwindcss, SiCanva, SiFigma } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import { Monitor, Code, Wrench, Lightbulb } from "lucide-react";
 
 const skillCategories = [
@@ -38,7 +39,7 @@ const skillCategories = [
     skills: [
       { name: "Git", icon: FaGitAlt, level: 80, color: "#f05032" },
       { name: "GitHub", icon: FaGithub, level: 82, color: "#181717" },
-      { name: "VS Code", icon: SiVisualstudiocode, level: 90, color: "#007acc" },
+      { name: "VS Code", icon: VscVscode, level: 90, color: "#007acc" },
       { name: "Canva", icon: SiCanva, level: 88, color: "#00c4cc" },
     ],
   },
@@ -144,7 +145,7 @@ export default function SkillsSection() {
             Technologies & Tools
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            {[FaHtml5, FaCss3Alt, FaJs, SiTailwindcss, FaPython, FaJava, FaGitAlt, FaGithub, SiVisualstudiocode, SiCanva].map(
+            {[FaHtml5, FaCss3Alt, FaJs, SiTailwindcss, FaPython, FaJava, FaGitAlt, FaGithub, VscVscode, SiCanva].map(
               (Icon, i) => (
                 <motion.div
                   key={i}
